@@ -232,7 +232,8 @@ steps_wday <-
   summarise(AvrgSteps_wday = mean(steps))
 
 library(lattice)
-xyplot(AvrgSteps_wday ~ interval | Day, steps_wday, layout = c(1,2), type='l', ylab="Average No. of Steps", xlab="Interval")
+xyplot(AvrgSteps_wday ~ interval | Day, steps_wday, layout = c(1,2), type='l', 
+       ylab="Average No. of Steps", xlab="Interval")
 ```
 
 ![plot of chunk average wday steps](figure/average wday steps-1.png) 
